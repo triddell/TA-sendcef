@@ -98,7 +98,7 @@ The final portion of the search, `| sendcef ceftarget:tcp`, is what calls the `s
 Here is an example record that would get sent to the target host and port over either TCP or UDP:
 
 ```
-06-05-2017 10:09:26.392 Tims-MBP CEF:0|Vendor|Product|Version|Class|Name|10|message=File too small to check seekcrc, probably truncated.  Will re-read entire file\='/Users/tim/opt/splunk-sendtest/var/log/splunk/django_error.log'. source=/Users/tim/opt/splunk-sendtest/var/log/splunk/splunkd.log`
+06-05-2017 10:09:26.392 Tims-MBP CEF:0|Vendor|Product|Version|Class|Name|10|message=File too small to check seekcrc, probably truncated.  Will re-read entire file\='/Users/tim/opt/splunk-sendtest/var/log/splunk/django_error.log'. source=/Users/tim/opt/splunk-sendtest/var/log/splunk/splunkd.log
 ```
 
 In the search command, notice how full control of the event formatting is handled by using `convert` and `eval` to set key fields prior to calling `sendcef`. The full power of the Splunk Search Processing Language (SPL) is available to set these fields.
