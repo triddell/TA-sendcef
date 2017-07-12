@@ -137,4 +137,4 @@ These events can be searched with Splunk using: `index=_internal source=*sendcef
 
 ### Related Application
 
-A similar application has been developed for sending "raw" Splunk events to third-party servers. Further information on this application is available on both[Splunk Base](https://splunkbase.splunk.com/app/3624/) and [GitHub](https://github.com/triddell/TA-sendraw).
+A similar application has been developed for sending "raw" Splunk events to third-party servers. Further information on this application is available on both [Splunk Base](https://splunkbase.splunk.com/app/3624/) and [GitHub](https://github.com/triddell/TA-sendraw).
