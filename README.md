@@ -11,9 +11,9 @@ The `sendcef` custom command will only work with 6.4.x or higher versions of Spl
 ## System Requirements
 
 The `sendcef` command is a binary application written in [Go](https://golang.org). The TA has binaries included for the following platforms:
-* Darwin (OS X) 64-bit
-* Linux 64-bit
-* Windows 64-bit
+ * Darwin (OS X) 64-bit
+ * Linux 64-bit
+ * Windows 64-bit
 
 ## Installation
 
@@ -35,11 +35,11 @@ Here is an example configuration file:
 #timeout = 5s
 
 [ceftarget:tcp]
-server = <your_server_ip>:10522
+server = your_server_ip:10522
 protocol = tcp
 
 [ceftarget:udp]
-server = <your_server_ip>:10523
+server = your_server_ip:10523
 protocol = udp
 ```
 
@@ -104,14 +104,14 @@ Here is an example record that would get sent to the target host and port over e
 In the search command, notice how full control of the event formatting is handled by using `convert` and `eval` to set key fields prior to calling `sendcef`. The full power of the Splunk Search Processing Language (SPL) is available to set these fields.
 
 `sendcef` uses these fields when processing:
-* cef_time 
-* cef_host
-* cef_device_product
-* cef_device_vendor
-* cef_event_class
-* cef_name
-* cef_severity
-* cef_extension
+ * cef_time 
+ * cef_host
+ * cef_device_product
+ * cef_device_vendor
+ * cef_event_class
+ * cef_name
+ * cef_severity
+ * cef_extension
 
 This example hard-codes the CEF header fields but these values could just as easily be dynamic and based on the underlying Splunk event (using any SPL commands.)
 
